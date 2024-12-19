@@ -14,11 +14,11 @@ public class enemymovement : MonoBehaviour
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
 
         // Zoek de XR Rig met de tag "Player"
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        GameObject player = GameObject.FindGameObjectWithTag("Base");
         if (player != null)
         {
             playerTransform = player.transform;
-        }   
+        }    
     }
 
     // Update is called once per frame
